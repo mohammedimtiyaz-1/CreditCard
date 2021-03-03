@@ -1,0 +1,145 @@
+.datpayment-form {
+    font-size: 15px;
+    background: #fff;
+    color: #333333;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: auto; }
+  
+  .dpf-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold; }
+  
+  .dpf-input-row {
+    margin: 20px auto; }
+    .dpf-input-row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .dpf-input-row .dpf-input-container {
+      text-align: center;
+      position: relative; }
+      .dpf-input-row .dpf-input-container.with-icon .dpf-input {
+        padding-left: 40px; }
+      .dpf-input-row .dpf-input-container.dpf-row-valid .fa {
+        color: #188a1e; }
+      .dpf-input-row .dpf-input-container.dpf-row-valid .dpf-input {
+        opacity: 1;
+        border: 1px solid rgba(24, 138, 30, 0.35);
+        -webkit-box-shadow: 0px 1px 0px rgba(24, 138, 30, 0.25), inset 0px 3px 6px rgba(24, 138, 30, 0.25);
+                box-shadow: 0px 1px 0px rgba(24, 138, 30, 0.25), inset 0px 3px 6px rgba(24, 138, 30, 0.25); }
+      .dpf-input-row .dpf-input-container.dpf-row-invalid {
+        color: #ff2525; }
+        .dpf-input-row .dpf-input-container.dpf-row-invalid .dpf-input {
+          opacity: 1;
+          color: #ff2525;
+          border: 1px solid rgba(255, 37, 37, 0.35);
+          -webkit-box-shadow: 0px 1px 0px rgba(255, 37, 37, 0.25), inset 0px 3px 6px rgba(255, 37, 37, 0.25);
+                  box-shadow: 0px 1px 0px rgba(255, 37, 37, 0.25), inset 0px 3px 6px rgba(255, 37, 37, 0.25); }
+    .dpf-input-row .dpf-input-column {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      padding: 0 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .dpf-input-row .dpf-input-column .dpf-input {
+        margin: auto;
+        width: 65%; }
+  
+  .dpf-input-label {
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 100%;
+    font-weight: bold; }
+  
+  .dpf-input-icon {
+    width: 20%;
+    position: absolute;
+    font-size: 1.5em;
+    top: 8px;
+    left: 20px; }
+  
+  .dpf-input {
+    display: block;
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 8px 10px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    opacity: .8; }
+    .dpf-input:hover, .dpf-input:focus {
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      opacity: 1;
+      -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px 3px 6px rgba(0, 0, 0, 0.25); }
+  
+  
+  .dpf-submit {
+    padding: 10px 30px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: #08c;
+    border: 1px solid #004466;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    font-size: 1.3em; }
+    .dpf-submit:hover {
+      border-radius: 3px;
+      -webkit-box-shadow: inset 0px 3px 16px rgba(0, 0, 0, 0.25), 0px 1px 10px rgba(255, 255, 255, 0.5), inset 0px -1px 2px rgba(255, 255, 255, 0.35);
+              box-shadow: inset 0px 3px 16px rgba(0, 0, 0, 0.25), 0px 1px 10px rgba(255, 255, 255, 0.5), inset 0px -1px 2px rgba(255, 255, 255, 0.35);
+      -webkit-transition: all 0.40s ease-out;
+      -webkit-transition: all 0.20s ease-out;
+      transition: all 0.20s ease-out; }
+    .dpf-submit .btn-loading-state {
+      display: none;
+      padding: 0 70px; }
+    .dpf-submit.loading {
+      color: black;
+      background: white; }
+      .dpf-submit.loading .btn-active-state {
+        display: none; }
+      .dpf-submit.loading .btn-loading-state {
+        display: block; }
+      .dpf-submit.loading .fa-refresh {
+        font-size: 1.5em;
+        -webkit-animation: fa-spin 2s infinite linear;
+        animation: fa-spin 2s infinite linear; }
+* {
+            padding:0;
+            margin:0;
+        }
+        
+        body {
+            background:#fafafa;
+            font-family: 'Roboto', sans-serif;
+            padding-top:50px;
+        }
+        
+        .datpayment-form {
+            width:500px;
+        }
+        pre {
+            width:500px;
+            margin:auto;
+        }  
+
+
+.inputvalidation{
+  position: absolute;
+  left: 55px;
+  display: none;
+  justify-self: flex-start;
+  color:red
+}        
